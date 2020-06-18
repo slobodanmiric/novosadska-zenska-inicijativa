@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;800&display=swap');
+:root {
+    --accents: #e1a0b1;
+    --basicColor: #333;
+    --transition: .4s ease;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--basicColor);
+}
+a:hover {
+    color: var(--accents);
+    transition: var(--transition);
+}
+/*********************
+nav 
+*********************/
+header {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    padding-top: 10px;
+}
+nav .logo  {
+    flex: 5;
+}
+nav img {
+    width: 70px;
+    height: auto;
+}
+nav ul {
+    flex: 7;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav .icons {
+    flex: 1;
+    color: var(--accents);
+}
+nav .icons i {
+    color: var(--accents);
+}
+nav .icons i:hover {
+    color: var(--basicColor);
+    transition: var(--transition);
+}
