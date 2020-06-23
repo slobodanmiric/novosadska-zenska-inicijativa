@@ -3,6 +3,8 @@
     --accents: #e1a0b1;
     --basicColor: #333;
     --transition: .4s ease;
+    --padding: 70px 0;
+    --white: #fff;
 }
 * {
     margin: 0;
@@ -11,6 +13,13 @@
 }
 body {
     font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5 {
+    font-weight: 400;
+}
+h2 {
+    letter-spacing: 1px;
 }
 ul {
     list-style: none;
@@ -21,6 +30,25 @@ a {
 }
 a:hover {
     color: var(--accents);
+    transition: var(--transition);
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+button {
+    padding: 15px 30px;
+    background: var(--accents);
+    border-radius: 30px;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--white);
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+button:hover {
+    background: var(--basicColor);
+    cursor: pointer;
     transition: var(--transition);
 }
 /*********************
@@ -42,7 +70,7 @@ nav .logo  {
     flex: 5;
 }
 nav img {
-    width: 70px;
+    width: 150px;
     height: auto;
 }
 nav ul {
@@ -60,4 +88,60 @@ nav .icons i {
 nav .icons i:hover {
     color: var(--basicColor);
     transition: var(--transition);
+}
+/*********************
+header
+*********************/
+header section {
+    display: flex;
+}
+header section img {
+    width: 80%;
+}
+header section article {
+    flex: 1;
+}
+header section article:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header section article:first-child h1 {
+    font-size: 3rem;
+}
+header section article:first-child p {
+    font-size: 1.3rem;
+}
+header section article:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+/*********************
+o nama
+*********************/
+.onama {
+    display: flex;
+    padding: var(--padding);
+    align-items: center;
+}
+.onama article:first-child {
+    background-image: url(img/onama.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.onama article {
+    flex: 1;
+}
+.onama article:last-child {
+    padding: 50px;
+}
+.onama h4 {
+    color: var(--accents);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+.onama h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
 }
